@@ -13,3 +13,11 @@ const handleNewItemFormSubmit = function(event) {
 
     event.target.reset();
 }
+
+const createListeningListItem = function(form) {
+    const listeningListItem = document.createElement('li');
+    listeningListItem.classList.add('listening-list-item');
+
+
+    return listeningListItem;
+}
