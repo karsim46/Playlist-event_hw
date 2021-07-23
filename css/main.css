@@ -13,6 +13,11 @@ header {
     font:bold;
 }
 
+footer {
+    margin-left: 7cm;
+    font:bold;
+}
+
 #form-wrapper {
     width: 100%;
     display: flex;
@@ -32,8 +37,13 @@ label::after{
     content: ":"
 }
 
-button, input[type="submit"] {
+button, input[type="submit"] {    
     margin-top: 1rem;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px 10px;
+   
+    
   }
   
   #listening-list {
@@ -49,4 +59,6 @@ button, input[type="submit"] {
     border-radius: 5%;
     background:blanchedalmond;
   }
+  
+
   

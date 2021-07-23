@@ -12,6 +12,7 @@
     </head>
     <body>
         <form id="new-item-form">
+          <fieldset>
             <div id="form-wrapper">
                 <div class="form-item">
                     <label for="title" class="primary">Album Title</label>
@@ -32,13 +33,36 @@
                         <option value="Dance">Dance</option>
                     </select>
                 </div>
+
+                <div class="form-item">                    
+                  <label for="date_added" class="primary">Date added</label>                                     
+                    <input type="date" id="date_added" name="date_added"
+                       value="2021-07-23"
+                       min="2021-01-01" max="2021-12-31">                  
+                </div>
+
+                <div class="form-item">
+                    <p>Likely to listen to:</p>
+                    <label for="likely" class="primary">Likely</label>                
+                    <input type="radio" name="choices" id="likely" value= "likely" checked>                    
+                
+                    <label for="not_likely" class="primary">Not Likely</label>                    
+                    <input type="radio" name="choices" id="not_likely" value= "not_likely" >             
+                
+                    <label for="definitely" class="primary">Definitely</label>                    
+                    <input type="radio" name="choices" id="definitely" value= "definitely" >
+                   
+                </div>
+
             </div>
-          <input type="submit" value="save"/>
+          <input type="submit" value="Save"/>
         </form>
         <button id="delete-all">Delete All</button>
+        <hr>
        <h1>Play List</h1>
        <hr>
        <ul id="listening-list"></ul>
+    </fieldset>
     </body>
     <footer>
         <p>Made By Simon Watson esq.</p>

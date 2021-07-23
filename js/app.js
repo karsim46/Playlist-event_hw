@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const deleteAllButton = document.querySelector('#delete-all');
     deleteAllButton.addEventListener('click', handDeleteAllClick);
+
+    
 })
 
 const handleNewItemFormSubmit = function (event) {
@@ -32,6 +34,22 @@ const createListeningListItem = function(form) {
     const category = document.createElement('p');
     category.textContent = form.category.value;
     listeningListItem.appendChild(category);
+
+    const date_added = document.createElement('p');
+    category.dateContent = form.date_added.value;
+    listeningListItem.appendChild(date_added);
+
+    const likely = document.createElement('radio');
+    category.radioContent = form.likely.value;
+    listeningListItem.appendChild(likely);
+
+    const not_likely= document.createElement('radio');
+    category.radioContent = form.not_likely.value;
+    listeningListItem.appendChild(not_likely);
+
+    const definitely = document.createElement('radio');
+    category.radioContent = form.definitely.value;
+    listeningListItem.appendChild(definitely);
 
     return listeningListItem;
 }
